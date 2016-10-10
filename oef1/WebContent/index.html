@@ -9,6 +9,7 @@
 		<title>Homepage</title>
 		
 		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/stijlen.css">
 	
 		<!--[if lt IE 9]>
    			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -21,34 +22,115 @@
 		
 		<div class="container-fluid">
 			<div class="row">
-			<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-		  				</div>
-		  				
-		  			<div class="collapse navbar-collapse" id="mynavbar-content">
-						<ul class="nav navbar-nav">
-							<li><a href="#">Home</a></li>
-							<li class="dropdown">
-							<li><a href="Ervaringen.html">Ervaringen</a></li>
-							<li><a href="Comments.html">Commentaar</a></li>
-						</ul>
-					</div>	
+				<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+			  				</div>
+			  				
+			  			<div class="collapse navbar-collapse" id="mynavbar-content">
+							<ul class="nav navbar-nav">
+								<li><a href="#">Home</a></li>
+								<li class="dropdown">
+								<li><a href="Ervaringen.html">Ervaringen</a></li>
+								<li><a href="Comments.html">Commentaar</a></li>
+							</ul>
+						</div>	
+					</div>
 				</div>
 			</div>
+			
+			<div class="row">
+			<div id="bestPicsCarousel" class="carousel slide" data-ride="carousel">
+				
+					<!-- Indicators -->
+				
+	   				<ol class="carousel-indicators">
+						<li data-target="#bestPicsCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#bestPicsCarousel" data-slide-to="1"></li>
+						<li data-target="#bestPicsCarousel" data-slide-to="2"></li>
+	   				</ol>
+	   				
+	   				<!-- Wrapper for slides -->
+	   				
+					<div class="carousel-inner">
+						<div class="item active">
+							
+							<div class="carousel-caption">
+								<h3></h3>
+								<p></p>
+							</div>
+						</div>
+						<div class="item">
+							
+							<div class="carousel-caption">
+								<h3></h3>
+								<p></p>
+							</div>
+						</div>
+						<div class="item">
+							
+							<div class="carousel-caption">
+								<h3></h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Controls -->
+					
+	   				<a class="left carousel-control" href="#bestPicsCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+				
+					<a class="right carousel-control" href="#bestPicsCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>			
+				</div>
 			</div>
+			
+			
+			
+			<div class="container">
+				<div class="row" id="space">
+				<h1>Home</h1>
+					<div class="col-xs-12 col-lg-4">
+						<h3>Vakantie aan zee</h3>
+						<p>
+						Ik ben samen met Gert-Jan en 5 andere maten naar Koksijde geweest voor een lang weekend aan zee van 18 tot en met 21 augustus.
+						</p>
+						<img src="images/Capture.PNG">
+					</div>
+					<div class="col-xs-12 col-lg-4">
+						<h3>Vakantie in de Ardennen</h3>
+						<p>
+						Samen met mijn ouders en zussen ben ik voor een weekend naar de Ardennen getrokken. 
+						Wanneer en zolang als mogelijk deden we verschillende wandelingen in verschillende dorpen en steden in de omgeving van het Sunpark in Vielsalm.					
+						</p>
+						<img src="images/P1080420.JPG">
+					</div>			
+					<div class="col-xs-12 col-lg-4">
+						<h3>Bobbejaanland</h3>
+						<p>
+						Het komt minder en minder voor dat we naar pretparken gaan, dus was het een leuke verandering om nog eens naar Bobbejaanland te gaan.
+						</p>
+						<img src="images/scannen0001.jpg">
+					</div>
+				</div>
 			</div>
+		</div>
 		<script   src="https://code.jquery.com/jquery-1.11.0.js"   
 		integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw="   crossorigin="anonymous">
 		</script>
 		<script src="js/bootstrap.js"></script>
 		<script type="text/javascript">
-
+			$(document).ready(function(){
+				$('.tooltipButton').tooltip();
+			});
 		</script>
 	</body>
 </html>
